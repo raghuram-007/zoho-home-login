@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 420px;
+            width: 450px;
+            border: 1px solid white;
+            position: relative;
+            top: 120px;
+            color: white;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 20px 20px rgba(0, 1, 1, 0.484),
+                10px 16px 6px rgba(0, 1, 1, 0.488);
+
+        }
+
+        input {
+            padding: 11px;
+            width: 20vw;
+            border-radius: 60px;
+            background-color: transparent;
+            color: white;
+            font-size: medium;
+
+
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        #check {
+            position: relative;
+            right: 100px;
+        }
+
+        button {
+            padding: 11px;
+            width: 20vw;
+            border-radius: 60px;
+            background-color: dodgerblue;
+            font-size: large;
+            font-weight: bolder;
+            color: white;
+         
+
+
+        }
+        button:hover{
+            transform: translateY(-3px);
+background-color: red;   
+transition: all ease-in-out 0.8s;     }
+
+        body {
+            background-image: url(priroda-pirs-most-re-reka.webp);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <center>
+                <h2
+                    style="font-size:xx-large;font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    Login</h2> <br>
+                <input type="text" placeholder="Username" required> <br> <br>
+                <input type="password" placeholder="Password" required> <br> <br>
+                <input type="checkbox" id="check" required><span
+                    style="position: relative; right: 245px;top: -2px;">Remember
+                    me</span> <span><a href="#" style="position: relative; top: -21px; left: 90px;">Forget
+                        Password</a></span> <br>
+                <button><a href="zoho.html" style="text-decoration: none;color: white;"> Login </a></button>
+                <p>Don't Have an Account? <a href=""> Register Now </a></p>
+            </center>
+        </div>
+    </center>
+</body>
+
+</html>

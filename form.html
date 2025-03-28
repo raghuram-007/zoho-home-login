@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size: larger;
+            font-weight: bolder;
+            text-transform: capitalize;
+            font-size: x-large;
+        }
+        input{
+            padding: 10px;
+            width: 20vw;
+        }
+        button{
+            padding: 10px;
+            background-color: dodgerblue;
+            font-weight: bolder;
+            font-size: large;
+            color: white;
+
+        }
+        button:hover{
+            background-color: crimson;
+
+        }
+        #res{
+            height: 230px;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h2><u>to do list </u> </h2>
+        <br> <br> 
+        <input type="text"> <button onclick="disc()">Create</button>
+        <div id="res"></div>
+
+
+        <script>
+            function disc(){
+                let a=document.querySelector("input").value
+            
+                let b=document.createElement("p")
+                b.innerHTML=a
+                b.style.backgroundColor="dimgrey"
+                b.style.color="white"
+                b.style.padding="10px"
+                b.style.width="570px"
+                b.style.height="70px"
+                b.style.fontSize="26px"
+                b.style.textAlign="left"
+                b.style.boxShadow="0 0 10px black"
+
+                let c=document.createElement("button")
+                c.innerHTML="delete"
+                c.style.backgroundColor="red"
+                c.style.padding="8px"
+                c.style.color="white"
+                c.style.position="relative"
+                c.style.left="240px"
+                c.style.top="-100px"
+
+                document.getElementById("res").appendChild(b)
+                document.getElementById("res").appendChild(c)
+            }
+
+
+            
+
+        </script>
+
+    </center>
+</body>
+</html>

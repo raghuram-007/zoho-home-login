@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            list-style-type: none;
+            padding: 2px;
+            background-color: rgba(44, 21, 21, 0.2);
+            color: white;
+            text-shadow: 0 0 2px black;
+            font-weight: bolder;
+           
+            
+        }
+        li{
+            padding: 38px;
+            font-size:22px;
+            font-weight: bolder;
+        }
+        body{
+            overflow: hidden;
+            background-image: url(img.jpg);
+            background-position:top;
+        }
+        li:hover{
+            background-color: rgba(45, 57, 57, 0.495);
+            color: white;
+            transition: all ease-in-out 0.8s;
+            border-radius: 10px;
+            text-shadow: 0 0 4px white;
+        }
+        button{
+            background-color: red;
+            padding: 20px;
+            color: white;
+            font-size: large;
+            border-radius: 10px;
+            position: relative;
+            left: 610px;
+            top: 140px;
+        }
+        button:hover{
+            background-color: dodgerblue;
+            transition: all ease-in-out 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Service</li>
+        <li style="position: relative; left: 800px;"><a href="login.html" style="text-decoration: none; color: white;"> Login </a></li>
+        
+    </ul>
+    <center>
+    <h1 style="position: relative;top: 120px; left: 20px; color: black;">Welcome to Zoho Solution  <br> Something New</h1></center>
+    <button>Explore More</button> <button style="position: relative; left: 670px;">Subcribe Us</button>
+</body>
+</html>
